@@ -8,7 +8,6 @@ import logging
 from datetime import datetime
 from typing import Any
 
-logger = logging.getLogger(__name__)
 
 from streamstats.constants import ERROR_LEVELS, READ_ENCODING
 from streamstats.errors import StreamStatsError, UnsupportedFormatError
@@ -19,6 +18,8 @@ from streamstats.parsers import (
     detect_format,
     parse_csv_row,
 )
+
+logger = logging.getLogger(__name__)
 
 
 def make_stats() -> dict[str, Any]:

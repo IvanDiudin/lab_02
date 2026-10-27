@@ -86,7 +86,7 @@ def main(argv: list[str] | None = None) -> int:
     logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
     args = build_parser().parse_args(argv)
 
-    
+
     try:
         run_analyze(args)
     except StreamStatsError as error:

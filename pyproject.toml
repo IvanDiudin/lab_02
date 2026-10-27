@@ -21,3 +21,6 @@ testpaths = ["tests"]
 
 [tool.ruff]
 line-length = 88
+
+[tool.mypy]
+mypy_path = "src"
