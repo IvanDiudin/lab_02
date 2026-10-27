@@ -8,7 +8,6 @@ import logging
 from datetime import datetime
 from typing import Any
 
-
 from streamstats.constants import ERROR_LEVELS, READ_ENCODING
 from streamstats.errors import StreamStatsError, UnsupportedFormatError
 from streamstats.filters import event_matches, make_filters
